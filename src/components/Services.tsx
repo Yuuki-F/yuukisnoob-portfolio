@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: "Datastores",
-    blurb: "profile-safe, leak-free, zero data loss. cry less, save more.",
+    blurb: "profile-safe, leak-free, zero data loss.",
     icon: Database,
     bg: "bg-paper-dark text-ink",
     rotate: 1,
@@ -44,7 +44,7 @@ const services = [
   },
   {
     title: "UI / UX",
-    blurb: "smooth, responsive, animated. buttons that feel illegal.",
+    blurb: "smooth, responsive, animated.",
     icon: Monitor,
     bg: "bg-paper-dark text-ink",
     rotate: -1,
@@ -58,7 +58,7 @@ const services = [
   },
   {
     title: "Optimization",
-    blurb: "server lag? memory leaks? not on my watch.",
+    blurb: "server lag? memory leaks? fixed.",
     icon: Settings,
     bg: "bg-ink text-paper",
     rotate: -1.5,
@@ -74,7 +74,7 @@ const services = [
     title: "Gun Systems",
     blurb: "i'll do it if i have to. i'd rather not.",
     icon: Crosshair,
-    bg: "bg-paper-dark text-ink",
+    bg: "bg-blood-dark text-paper",
     rotate: 1,
   },
 ];
