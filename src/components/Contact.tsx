@@ -81,6 +81,16 @@ export default function Contact() {
           <p className="font-handwritten text-xl text-ink/60 h-6">
             {copied ? "copied! now go DM me" : "click to copy"}
           </p>
+
+          <a
+            href="https://www.roblox.com/users/145740081/profile"
+            target="_blank"
+            rel="noreferrer"
+            data-cursor="hover"
+            className="mt-6 inline-flex items-center gap-2 bg-paper text-ink font-comic text-xl md:text-2xl px-6 py-2.5 panel-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:[box-shadow:0_0_0_2px_var(--color-ink)_inset] transition-all"
+          >
+            ROBLOX PROFILE → /users/145740081
+          </a>
         </motion.div>
       </div>
     </section>

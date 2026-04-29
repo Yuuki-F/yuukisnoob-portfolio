@@ -4,11 +4,11 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
 
 const SFX = [
-  { text: "BAM!", color: "bg-blood text-paper", rotate: -8, top: "12%", left: "6%", delay: 0.4 },
-  { text: "POW!", color: "bg-sun text-ink", rotate: 6, top: "22%", left: "82%", delay: 0.7 },
-  { text: "WHOOSH!", color: "bg-tech text-paper", rotate: -12, top: "68%", left: "78%", delay: 1.0 },
-  { text: "ZAP!", color: "bg-ink text-paper", rotate: 4, top: "70%", left: "8%", delay: 1.2 },
-  { text: "SHWING!", color: "bg-mint text-ink", rotate: -3, top: "44%", left: "88%", delay: 1.5 },
+  { text: "EGOIST!", color: "bg-tech text-paper", rotate: -8, top: "12%", left: "6%", delay: 0.4 },
+  { text: "ODM!", color: "bg-mint text-ink", rotate: 6, top: "22%", left: "82%", delay: 0.7 },
+  { text: "HAKI!", color: "bg-blood text-paper", rotate: -12, top: "68%", left: "78%", delay: 1.0 },
+  { text: "GLITCH!", color: "bg-ink text-paper", rotate: 4, top: "70%", left: "8%", delay: 1.2 },
+  { text: "SLASH!", color: "bg-sun text-ink", rotate: -3, top: "44%", left: "88%", delay: 1.5 },
 ];
 
 export default function Hero() {

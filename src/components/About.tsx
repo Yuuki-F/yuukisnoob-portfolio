@@ -38,22 +38,32 @@ export default function About() {
               BIO
             </div>
             <p className="text-xl md:text-2xl leading-relaxed">
-              I&apos;m <span className="font-comic text-blood text-3xl">Yuukisnoob</span>,
-              a Roblox scripter who treats Luau the way most people treat their
-              caffeine — daily, aggressively, and with{" "}
+              I&apos;m{" "}
+              <span className="font-comic text-blood text-3xl">Yuukisnoob</span>
+              , a Roblox scripter with{" "}
               <span className="font-handwritten text-3xl text-tech">
-                questionable life choices
-              </span>
-              .
+                7 years
+              </span>{" "}
+              of pressing F to pay respects to my own bugs.
             </p>
             <p className="text-xl md:text-2xl leading-relaxed mt-4">
-              I build combat systems that hit harder than your DMs, frameworks
-              tighter than your deadlines, and full games that&apos;ll make
-              your players forget what touch grass means.
+              I&apos;ve owned <span className="font-comic text-tech">Vision</span>{" "}
+              (the Blue Lock game that hit{" "}
+              <span className="font-comic text-blood">10K CCU</span>), owned{" "}
+              <span className="font-comic">Excore</span> back when it was the
+              biggest CC game in the metaverse, head-dev&apos;d the{" "}
+              <span className="font-comic text-mint">Attack on Titan</span>{" "}
+              project, programmed{" "}
+              <span className="font-comic text-blood">One Piece Freedom Awaits</span>
+              , and shipped a fistful of other anime games I&apos;ll list when I
+              feel like it.
             </p>
             <p className="text-lg md:text-xl leading-relaxed mt-4 text-ink/70">
-              Just don&apos;t ask me to script a gun system.{" "}
-              <span className="font-comic text-blood">No. Never. Don&apos;t.</span>
+              If your game has anime in the title and questionable life advice
+              in the chat, odds are I touched it.{" "}
+              <span className="font-comic text-blood">
+                Just don&apos;t ask for gun systems.
+              </span>
             </p>
           </div>
 
