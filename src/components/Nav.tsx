@@ -22,10 +22,10 @@ export default function Nav() {
     >
       <a
         href="#top"
-        className="font-display text-3xl tracking-wider"
+        className="font-display text-2xl tracking-wider"
         data-cursor="hover"
       >
-        YUUKI<span className="text-blood">.</span>
+        YUUKISNOOB
       </a>
       <ul className="hidden md:flex items-center gap-8 font-comic text-xl">
         {links.map((l) => (

@@ -44,7 +44,7 @@ export default function Contact() {
         >
           LET&apos;S
           <br />
-          <span className="ink-stroke">COOK.</span>
+          <span className="ink-stroke">START.</span>
         </motion.h2>
 
         <motion.p

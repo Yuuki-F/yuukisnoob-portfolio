@@ -8,7 +8,6 @@ import Process from "@/components/Process";
 import Games from "@/components/Games";
 import Reel from "@/components/Reel";
 import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -26,7 +25,6 @@ export default function Home() {
         <Games />
         <Reel />
         <Pricing />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />

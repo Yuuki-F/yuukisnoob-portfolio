@@ -3,16 +3,17 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
 import dynamic from "next/dynamic";
+import { Check } from "lucide-react";
 
 const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
 
-const cats = [
-  { emoji: "😼", top: "10%", left: "5%", size: "text-7xl md:text-9xl", rotate: -8, delay: 0.4 },
-  { emoji: "😺", top: "18%", left: "85%", size: "text-6xl md:text-8xl", rotate: 8, delay: 0.7 },
-  { emoji: "🙀", top: "66%", left: "80%", size: "text-7xl md:text-9xl", rotate: -10, delay: 1.0 },
-  { emoji: "😻", top: "72%", left: "6%", size: "text-6xl md:text-8xl", rotate: 5, delay: 1.2 },
-  { emoji: "😹", top: "42%", left: "90%", size: "text-5xl md:text-7xl", rotate: -3, delay: 1.5 },
-  { emoji: "🐈‍⬛", top: "38%", left: "3%", size: "text-5xl md:text-7xl", rotate: 6, delay: 1.7 },
+const moneys = [
+  { emoji: "💰", top: "10%", left: "5%", size: "text-7xl md:text-9xl", rotate: -8, delay: 0.4 },
+  { emoji: "💵", top: "18%", left: "85%", size: "text-6xl md:text-8xl", rotate: 8, delay: 0.7 },
+  { emoji: "💸", top: "66%", left: "80%", size: "text-7xl md:text-9xl", rotate: -10, delay: 1.0 },
+  { emoji: "🤑", top: "72%", left: "6%", size: "text-6xl md:text-8xl", rotate: 5, delay: 1.2 },
+  { emoji: "🪙", top: "42%", left: "90%", size: "text-5xl md:text-7xl", rotate: -3, delay: 1.5 },
+  { emoji: "💎", top: "38%", left: "3%", size: "text-5xl md:text-7xl", rotate: 6, delay: 1.7 },
 ];
 
 export default function Hero() {
@@ -50,8 +51,8 @@ export default function Hero() {
         <HeroScene />
       </div>
 
-      {cats.map((c) => (
-        <CatFloat key={c.emoji + c.top} sx={sx} sy={sy} {...c} />
+      {moneys.map((m) => (
+        <MoneyFloat key={m.emoji + m.top} sx={sx} sy={sy} {...m} />
       ))}
 
       <div className="relative z-10 text-center px-6">
@@ -62,6 +63,24 @@ export default function Hero() {
           className="font-display leading-[0.85] tracking-tight text-[clamp(5rem,22vw,22rem)]"
         >
           YUUKI<span className="text-blood">.</span>
+          <motion.span
+            initial={{ scale: 0, rotate: -90 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{
+              delay: 0.85,
+              type: "spring",
+              damping: 12,
+              stiffness: 220,
+            }}
+            className="inline-flex bg-tech rounded-full items-center justify-center align-middle ml-3"
+            style={{ width: "0.42em", height: "0.42em" }}
+          >
+            <Check
+              className="text-paper"
+              style={{ width: "0.26em", height: "0.26em" }}
+              strokeWidth={5}
+            />
+          </motion.span>
         </motion.h1>
 
         <motion.div
@@ -115,7 +134,7 @@ export default function Hero() {
   );
 }
 
-function CatFloat({
+function MoneyFloat({
   emoji,
   rotate,
   top,
