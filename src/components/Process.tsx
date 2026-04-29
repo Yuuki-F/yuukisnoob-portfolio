@@ -8,7 +8,7 @@ const steps = [
     n: "01",
     title: "BRIEF",
     icon: MessageSquare,
-    blurb: "slide in dms. tell me what you want, what you're working with.",
+    blurb: "we discuss what you want, your task list, your budget, and deadlines.",
     bg: "bg-paper-dark text-ink",
     accent: "text-blood",
     rotate: -1,
@@ -17,7 +17,7 @@ const steps = [
     n: "02",
     title: "SCOPE",
     icon: Ruler,
-    blurb: "i scope it, give you a quote. fixed price, or retainer.",
+    blurb: "i'll give you a scope of everything, and we'll finish discussions and make the payments.",
     bg: "bg-tech text-paper",
     accent: "text-sun",
     rotate: 1,
@@ -26,7 +26,7 @@ const steps = [
     n: "03",
     title: "BUILD",
     icon: Hammer,
-    blurb: "i build it. fast. updates as i go. you don't ghost-wait.",
+    blurb: "i'll make everything ultra fast like you've never seen before.",
     bg: "bg-blood text-paper",
     accent: "text-sun",
     rotate: -0.5,
@@ -35,7 +35,7 @@ const steps = [
     n: "04",
     title: "SHIP",
     icon: Rocket,
-    blurb: "delivered. polished. yours. i don't bail post-launch.",
+    blurb: "game done. remember me for future commissions.",
     bg: "bg-ink text-paper",
     accent: "text-mint",
     rotate: 0.5,
@@ -49,7 +49,7 @@ export default function Process() {
       className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <div className="text-center mb-16 space-y-4">
-        <p className="font-handwritten text-2xl text-blood">— chapter 03</p>
+        <p className="font-handwritten text-2xl text-blood">chapter 03</p>
         <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
           THE PROCESS
         </h2>

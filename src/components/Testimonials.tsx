@@ -31,7 +31,7 @@ export default function Testimonials() {
       className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <div className="text-center mb-16 space-y-4">
-        <p className="font-handwritten text-2xl text-blood">— chapter 06</p>
+        <p className="font-handwritten text-2xl text-blood">chapter 06</p>
         <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
           WHAT THEY SAY
         </h2>
@@ -61,14 +61,14 @@ export default function Testimonials() {
               {s.body}
             </p>
             <p className="relative font-handwritten text-xl mt-4 opacity-80">
-              — {s.author}
+              {s.author}
             </p>
           </motion.div>
         ))}
       </div>
 
       <p className="mt-12 text-center font-handwritten text-xl text-ink/60">
-        worked with me? send a quote — i&apos;ll plug it in.
+        worked with me? send a quote, i&apos;ll plug it in.
       </p>
     </section>
   );

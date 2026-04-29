@@ -10,7 +10,7 @@ export default function Pricing() {
       className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <div className="text-center mb-16 space-y-4">
-        <p className="font-handwritten text-2xl text-blood">— chapter 05</p>
+        <p className="font-handwritten text-2xl text-blood">chapter 05</p>
         <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
           THE RATES
         </h2>
@@ -37,7 +37,7 @@ export default function Pricing() {
             </div>
             <div className="font-display text-6xl md:text-7xl leading-none">
               $300
-              <span className="text-ink/40"> — </span>
+              <span className="text-ink/40"> - </span>
               $1000
             </div>
             <p className="mt-4 text-lg md:text-xl text-ink/80 lowercase">
@@ -71,7 +71,7 @@ export default function Pricing() {
             </div>
             <div className="font-display text-6xl md:text-7xl leading-none">
               $500
-              <span className="text-paper/40"> — </span>
+              <span className="text-paper/40"> - </span>
               $4500
               <span className="text-paper/60 text-3xl md:text-4xl"> / mo</span>
             </div>
@@ -91,7 +91,7 @@ export default function Pricing() {
       </div>
 
       <p className="mt-10 text-center font-handwritten text-2xl">
-        scope it in dms — quotes back same day.
+        scope it in dms, quotes back same day.
       </p>
     </section>
   );

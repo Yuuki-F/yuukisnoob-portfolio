@@ -28,20 +28,20 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "yuuki — roblox scripter",
+  title: "yuuki - roblox scripter",
   description:
-    "yuuki — roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
+    "yuuki - roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
   metadataBase: new URL("https://yuukisnoob.dev"),
   openGraph: {
-    title: "yuuki — roblox scripter",
+    title: "yuuki - roblox scripter",
     description:
-      "yuuki — roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
+      "yuuki - roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
     type: "website",
     url: "https://yuukisnoob.dev",
   },
   twitter: {
     card: "summary_large_image",
-    title: "yuuki — roblox scripter",
+    title: "yuuki - roblox scripter",
     description:
       "fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
   },

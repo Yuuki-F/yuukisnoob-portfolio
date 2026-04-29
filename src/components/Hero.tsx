@@ -71,7 +71,7 @@ export default function Hero() {
           className="mt-2 inline-flex items-center gap-3 bg-ink text-paper px-5 py-2 -rotate-1 panel-shadow-sm"
         >
           <span className="font-comic text-2xl md:text-4xl">
-            ROBLOX SCRIPTER · SHIPS FAST
+            ROBLOX SCRIPTER<span className="text-blood">.</span>
           </span>
         </motion.div>
 

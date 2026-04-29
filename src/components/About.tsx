@@ -16,7 +16,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="md:col-span-5 space-y-6"
         >
-          <p className="font-handwritten text-2xl text-blood">— chapter 01</p>
+          <p className="font-handwritten text-2xl text-blood">chapter 01</p>
           <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
             ABOUT
           </h2>
@@ -39,7 +39,8 @@ export default function About() {
               <span className="font-comic text-tech text-2xl normal-case">
                 7 years
               </span>{" "}
-              scripting luau. fast turnaround. anime games my lane.
+              scripting luau. fast turnaround. mainly working on anime games
+              and combat games, can do anything though.
             </p>
             <p className="text-xl md:text-2xl leading-relaxed mt-5 lowercase">
               owned{" "}
@@ -56,20 +57,20 @@ export default function About() {
               </span>
               , programmed{" "}
               <span className="font-comic text-blood normal-case">
-                one piece freedom awaits
-              </span>{" "}
-              — plus a long list more.
+                aot freedom awaits
+              </span>
+              , plus a long list more.
             </p>
             <p className="text-lg md:text-xl leading-relaxed mt-5 text-ink/80 lowercase">
               over <span className="font-comic text-2xl text-ink normal-case">1B+</span>{" "}
-              visits across the lineup. if your game&apos;s anime-coded and needs
-              to actually ship — slide in.
+              visits across the lineup. if your game needs to actually ship,
+              hit me up.
             </p>
           </div>
 
           <div className="absolute -bottom-6 -right-6 hidden md:block">
-            <div className="bg-tech text-paper font-comic text-xl px-4 py-2 rotate-6 panel-shadow-sm">
-              FAST AF ★
+            <div className="bg-tech text-paper font-comic text-lg md:text-xl px-3 py-1.5 rotate-6 panel-shadow-sm">
+              im ultra fast promise
             </div>
           </div>
         </motion.div>

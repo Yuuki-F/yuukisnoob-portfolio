@@ -86,13 +86,13 @@ export default function Services() {
       className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <div className="text-center mb-16 space-y-4">
-        <p className="font-handwritten text-2xl text-blood">— chapter 02</p>
+        <p className="font-handwritten text-2xl text-blood">chapter 02</p>
         <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
           THE ARSENAL
         </h2>
         <p className="font-comic text-2xl md:text-3xl">
           everything i offer{" "}
-          <span className="text-blood">— some more reluctantly than others</span>
+          <span className="text-blood">- some more reluctantly than others</span>
         </p>
       </div>
 

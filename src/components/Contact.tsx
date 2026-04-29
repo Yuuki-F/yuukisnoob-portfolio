@@ -33,7 +33,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="font-handwritten text-2xl text-blood mb-3"
         >
-          — final chapter
+          final chapter
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, scale: 0.95 }}
@@ -54,7 +54,7 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="font-comic text-2xl md:text-3xl mt-6 max-w-2xl mx-auto"
         >
-          got a brief? slide in.
+          got a brief?
         </motion.p>
 
         <motion.div

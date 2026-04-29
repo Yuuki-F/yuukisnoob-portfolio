@@ -1,7 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Crown, Code2, Briefcase, Wrench, Sparkles } from "lucide-react";
+import {
+  Crown,
+  Code2,
+  Briefcase,
+  Wrench,
+  Sparkles,
+  MoreHorizontal,
+} from "lucide-react";
 
 type Role =
   | "OWNER"
@@ -9,7 +16,8 @@ type Role =
   | "PROGRAMMER"
   | "MANAGER"
   | "CONTRIBUTOR"
-  | "COMMISSION";
+  | "COMMISSION"
+  | "MORE";
 
 const RoleIcon = ({ role }: { role: Role }) => {
   switch (role) {
@@ -24,6 +32,8 @@ const RoleIcon = ({ role }: { role: Role }) => {
       return <Briefcase className="w-5 h-5" strokeWidth={2.5} />;
     case "COMMISSION":
       return <Sparkles className="w-5 h-5" strokeWidth={2.5} />;
+    case "MORE":
+      return <MoreHorizontal className="w-5 h-5" strokeWidth={2.5} />;
   }
 };
 
@@ -33,7 +43,7 @@ const games = [
     series: "Squid Game",
     role: "PROGRAMMER" as Role,
     stat: "80K PEAK CCU",
-    blurb: "Worked on the squid game game. peaked 80k. ridiculous numbers.",
+    blurb: "worked on a squid game when it was trending, reached 80k ccu.",
     bg: "bg-blood text-paper",
     accent: "text-sun",
     rotate: -1,
@@ -44,7 +54,7 @@ const games = [
     series: "Blue Lock",
     role: "OWNER" as Role,
     stat: "10K PEAK CCU",
-    blurb: "owned the blue lock game. flow cutscenes, emotes, full ship.",
+    blurb: "blue lock game i made for fun, people loved it!",
     bg: "bg-tech text-paper",
     accent: "text-sun",
     rotate: 1,
@@ -55,7 +65,7 @@ const games = [
     series: "CC GAME",
     role: "OWNER" as Role,
     stat: "BIGGEST CC 2020-21",
-    blurb: "ran the cc scene back when it ran roblox.",
+    blurb: "a cc game with an academy system!",
     bg: "bg-ink text-paper",
     accent: "text-blood",
     rotate: -0.5,
@@ -84,11 +94,11 @@ const games = [
     span: "",
   },
   {
-    name: "OP FREEDOM AWAITS",
-    series: "One Piece",
+    name: "AOT FREEDOM AWAITS",
+    series: "Attack on Titan",
     role: "PROGRAMMER" as Role,
-    stat: "PUBLIC · HIGH CCU",
-    blurb: "programmer on a public op game pulling real numbers.",
+    stat: "PUBLIC . HIGH CCU",
+    blurb: "programmer on a public aot game pulling real numbers.",
     bg: "bg-paper-dark text-ink",
     accent: "text-blood",
     rotate: 0.5,
@@ -110,7 +120,7 @@ const games = [
     series: "One Piece",
     role: "CONTRIBUTOR" as Role,
     stat: "CC GAME",
-    blurb: "scripting on the one piece cc favorite.",
+    blurb: "scripter on a big one piece cc game.",
     bg: "bg-blood text-paper",
     accent: "text-sun",
     rotate: 1,
@@ -121,20 +131,20 @@ const games = [
     series: "One Piece",
     role: "MANAGER" as Role,
     stat: "SHIPPED",
-    blurb: "managed the project. kept the ship sailing.",
+    blurb: "managed the project, really good one piece game.",
     bg: "bg-ink text-paper",
     accent: "text-mint",
     rotate: -0.5,
     span: "",
   },
   {
-    name: "SAO",
-    series: "Sword Art Online",
-    role: "CONTRIBUTOR" as Role,
-    stat: "MMO SYSTEMS",
-    blurb: "mining + mmo systems on a full sao build.",
-    bg: "bg-tech text-paper",
-    accent: "text-mint",
+    name: "... AND MANY MORE",
+    series: "lost or NDA'd",
+    role: "MORE" as Role,
+    stat: "ASK IN DMS",
+    blurb: "i lost or can't show the rest. dm me if curious.",
+    bg: "bg-paper-dark text-ink",
+    accent: "text-blood",
     rotate: 0.5,
     span: "",
   },
@@ -147,7 +157,7 @@ export default function Games() {
       className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <div className="text-center mb-16 space-y-4">
-        <p className="font-handwritten text-2xl text-blood">— chapter 04</p>
+        <p className="font-handwritten text-2xl text-blood">chapter 04</p>
         <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
           THE TRACK RECORD
         </h2>
@@ -161,10 +171,6 @@ export default function Games() {
           <GameCard key={g.name} {...g} index={i} />
         ))}
       </div>
-
-      <p className="mt-12 text-center font-handwritten text-xl text-ink/60">
-        + a stack of closed-source contracts. ask in dms.
-      </p>
     </section>
   );
 }
