@@ -19,8 +19,8 @@ const clips = [
   },
   {
     id: "hvijko",
-    title: "Optimized Mob Spawning",
-    blurb: "100+ mobs at once. Server didn't even flinch.",
+    title: "Mob AI (w/ woapa)",
+    blurb: "group hoarding mobs",
     rotate: -1,
     span: "",
   },
