@@ -59,7 +59,7 @@ export default function Reel() {
           THE SHOWREEL
         </h2>
         <p className="font-comic text-2xl md:text-3xl">
-          receipts. <span className="text-blood">press play.</span>
+          1% of my <span className="text-blood">true power</span>
         </p>
       </div>
 
@@ -68,6 +68,11 @@ export default function Reel() {
           <ClipCard key={c.id} {...c} index={i} />
         ))}
       </div>
+
+      <p className="mt-12 text-center font-handwritten text-xl text-ink/60 max-w-2xl mx-auto">
+        and more, but i lost the files or something. dm me if you want
+        something specific.
+      </p>
     </section>
   );
 }
