@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 
 const links = [
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Arsenal", href: "#services" },
   { label: "Games", href: "#projects" },
   { label: "Reel", href: "#reel" },
+  { label: "Rates", href: "#rates" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -20,7 +21,7 @@ export default function Nav() {
     >
       <a
         href="#top"
-        className="font-display text-2xl tracking-wider"
+        className="font-display text-3xl tracking-wider"
         data-cursor="hover"
       >
         YUUKI<span className="text-blood">.</span>

@@ -18,11 +18,8 @@ export default function About() {
         >
           <p className="font-handwritten text-2xl text-blood">— chapter 01</p>
           <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
-            WHO IS THIS GUY
+            ABOUT
           </h2>
-          <div className="inline-block bg-sun text-ink px-3 py-1 font-comic text-2xl -rotate-2 panel-shadow-sm">
-            (it&apos;s me, hi)
-          </div>
         </motion.div>
 
         <motion.div
@@ -32,45 +29,47 @@ export default function About() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="md:col-span-7 relative"
         >
-          {/* speech bubble */}
           <div className="relative bg-paper-dark panel-shadow p-8 md:p-10">
-            <div className="absolute -top-4 -left-4 bg-blood text-paper font-comic text-2xl px-4 py-1 -rotate-3 panel-shadow-sm">
-              BIO
-            </div>
-            <p className="text-xl md:text-2xl leading-relaxed">
-              I&apos;m{" "}
-              <span className="font-comic text-blood text-3xl">Yuukisnoob</span>
-              , a Roblox scripter with{" "}
-              <span className="font-handwritten text-3xl text-tech">
+            <p className="text-xl md:text-2xl leading-relaxed lowercase">
+              i&apos;m{" "}
+              <span className="font-comic text-blood text-3xl normal-case">
+                yuuki
+              </span>
+              .{" "}
+              <span className="font-comic text-tech text-2xl normal-case">
                 7 years
               </span>{" "}
-              of pressing F to pay respects to my own bugs.
+              scripting luau. fast turnaround. anime games my lane.
             </p>
-            <p className="text-xl md:text-2xl leading-relaxed mt-4">
-              I&apos;ve owned <span className="font-comic text-tech">Vision</span>{" "}
-              (the Blue Lock game that hit{" "}
-              <span className="font-comic text-blood">10K CCU</span>), owned{" "}
-              <span className="font-comic">Excore</span> back when it was the
-              biggest CC game in the metaverse, head-dev&apos;d the{" "}
-              <span className="font-comic text-mint">Attack on Titan</span>{" "}
-              project, programmed{" "}
-              <span className="font-comic text-blood">One Piece Freedom Awaits</span>
-              , and shipped a fistful of other anime games I&apos;ll list when I
-              feel like it.
-            </p>
-            <p className="text-lg md:text-xl leading-relaxed mt-4 text-ink/70">
-              If your game has anime in the title and questionable life advice
-              in the chat, odds are I touched it.{" "}
-              <span className="font-comic text-blood">
-                Just don&apos;t ask for gun systems.
+            <p className="text-xl md:text-2xl leading-relaxed mt-5 lowercase">
+              owned{" "}
+              <span className="font-comic text-tech normal-case">vision</span>{" "}
+              (blue lock, 10k peak), worked on{" "}
+              <span className="font-comic text-blood normal-case">
+                squid game
+              </span>{" "}
+              (80k peak), commissioned for{" "}
+              <span className="font-comic normal-case">king legacy</span>,
+              head-dev&apos;d{" "}
+              <span className="font-comic text-mint normal-case">
+                attack on titan project
               </span>
+              , programmed{" "}
+              <span className="font-comic text-blood normal-case">
+                one piece freedom awaits
+              </span>{" "}
+              — plus a long list more.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed mt-5 text-ink/80 lowercase">
+              over <span className="font-comic text-2xl text-ink normal-case">1B+</span>{" "}
+              visits across the lineup. if your game&apos;s anime-coded and needs
+              to actually ship — slide in.
             </p>
           </div>
 
-          {/* corner sticker */}
           <div className="absolute -bottom-6 -right-6 hidden md:block">
-            <div className="bg-tech text-paper font-comic text-2xl px-4 py-2 rotate-6 panel-shadow-sm">
-              CERTIFIED ★
+            <div className="bg-tech text-paper font-comic text-xl px-4 py-2 rotate-6 panel-shadow-sm">
+              FAST AF ★
             </div>
           </div>
         </motion.div>

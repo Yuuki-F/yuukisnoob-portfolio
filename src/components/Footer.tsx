@@ -6,11 +6,9 @@ export default function Footer() {
           YUUKI<span className="text-blood">.</span>
         </p>
         <p className="font-handwritten text-lg text-paper/70">
-          built with luau, caffeine, and questionable sleep schedules
+          scripting since 2019 · still going
         </p>
-        <p className="font-comic text-lg">
-          © {new Date().getFullYear()} — END OF CHAPTER
-        </p>
+        <p className="font-comic text-lg">© {new Date().getFullYear()}</p>
       </div>
     </footer>
   );

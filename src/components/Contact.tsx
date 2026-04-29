@@ -54,8 +54,7 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="font-comic text-2xl md:text-3xl mt-6 max-w-2xl mx-auto"
         >
-          got a brief? slide in.{" "}
-          <span className="text-blood">no gun systems though.</span>
+          got a brief? slide in.
         </motion.p>
 
         <motion.div
@@ -75,11 +74,14 @@ export default function Contact() {
             {copied ? (
               <Check className="w-7 h-7 text-mint" strokeWidth={3} />
             ) : (
-              <Copy className="w-6 h-6 opacity-70 group-hover:opacity-100" strokeWidth={2.5} />
+              <Copy
+                className="w-6 h-6 opacity-70 group-hover:opacity-100"
+                strokeWidth={2.5}
+              />
             )}
           </button>
           <p className="font-handwritten text-xl text-ink/60 h-6">
-            {copied ? "copied! now go DM me" : "click to copy"}
+            {copied ? "copied. now go dm me" : "click to copy"}
           </p>
 
           <a

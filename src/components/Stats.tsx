@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "10K+", label: "PEAK CCU" },
-  { value: "7+", label: "SHIPPED GAMES" },
-  { value: "7", label: "YEARS SCRIPTING" },
-  { value: "0", label: "GUN SYSTEMS" },
+  { value: "1B+", label: "TOTAL VISITS" },
+  { value: "80K", label: "PEAK CCU" },
+  { value: "9+", label: "SHIPPED GAMES" },
+  { value: "7", label: "YEARS DEEP" },
 ];
 
 export default function Stats() {

@@ -27,13 +27,13 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "yuukisnoob — self-proclaimed Luau master",
+  title: "yuuki — roblox scripter",
   description:
-    "Roblox scripter for hire. Combat systems, frameworks, full games, and everything in between. Except gun systems.",
+    "yuuki — roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
   openGraph: {
-    title: "yuukisnoob — self-proclaimed Luau master",
+    title: "yuuki — roblox scripter",
     description:
-      "Roblox scripter for hire. Combat systems, frameworks, full games, and everything in between. Except gun systems.",
+      "yuuki — roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
     type: "website",
   },
 };
