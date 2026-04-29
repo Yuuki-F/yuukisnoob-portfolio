@@ -147,7 +147,7 @@ export default function Games() {
       className="relative py-32 px-6 md:px-12 max-w-7xl mx-auto"
     >
       <div className="text-center mb-16 space-y-4">
-        <p className="font-handwritten text-2xl text-blood">— chapter 03</p>
+        <p className="font-handwritten text-2xl text-blood">— chapter 04</p>
         <h2 className="font-display text-6xl md:text-8xl leading-[0.9]">
           THE TRACK RECORD
         </h2>

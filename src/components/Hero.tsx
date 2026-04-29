@@ -2,6 +2,9 @@
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
+
+const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
 
 const cats = [
   { emoji: "😼", top: "10%", left: "5%", size: "text-7xl md:text-9xl", rotate: -8, delay: 0.4 },
@@ -34,14 +37,18 @@ export default function Hero() {
       id="top"
       className="relative min-h-screen w-full overflow-hidden flex items-center justify-center paper-grain"
     >
-      <div className="absolute inset-0 speed-lines opacity-30 pointer-events-none" />
-      <div className="absolute inset-0 halftone opacity-60 pointer-events-none" />
+      <div className="absolute inset-0 speed-lines opacity-25 pointer-events-none z-[0]" />
+      <div className="absolute inset-0 halftone opacity-40 pointer-events-none z-[0]" />
       <motion.div
         initial={{ scale: 0, rotate: 0 }}
         animate={{ scale: 1, rotate: 360 }}
         transition={{ duration: 1.4, ease: "easeOut" }}
-        className="absolute -right-40 -top-40 w-[700px] h-[700px] rounded-full halftone-red opacity-70 pointer-events-none animate-spin-slow"
+        className="absolute -right-40 -top-40 w-[700px] h-[700px] rounded-full halftone-red opacity-60 pointer-events-none animate-spin-slow z-[0]"
       />
+
+      <div className="absolute inset-0 z-[1]">
+        <HeroScene />
+      </div>
 
       {cats.map((c) => (
         <CatFloat key={c.emoji + c.top} sx={sx} sy={sy} {...c} />
@@ -136,7 +143,7 @@ function CatFloat({
       animate={{ scale: 1, rotate }}
       transition={{ delay, type: "spring", damping: 12, stiffness: 200 }}
       style={{ top, left, x: tx, y: ty }}
-      className={`absolute z-[1] hidden md:block ${size} animate-wobble select-none pointer-events-none [filter:drop-shadow(3px_3px_0_rgba(0,0,0,0.25))]`}
+      className={`absolute z-[2] hidden md:block ${size} animate-wobble select-none pointer-events-none [filter:drop-shadow(3px_3px_0_rgba(0,0,0,0.25))]`}
     >
       {emoji}
     </motion.div>

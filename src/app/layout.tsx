@@ -3,6 +3,7 @@ import { Anton, Bangers, Inter, Caveat } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Cursor from "@/components/Cursor";
+import Loader from "@/components/Loader";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,11 +31,19 @@ export const metadata: Metadata = {
   title: "yuuki — roblox scripter",
   description:
     "yuuki — roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
+  metadataBase: new URL("https://yuukisnoob.dev"),
   openGraph: {
     title: "yuuki — roblox scripter",
     description:
       "yuuki — roblox scripter. fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
     type: "website",
+    url: "https://yuukisnoob.dev",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "yuuki — roblox scripter",
+    description:
+      "fast turnaround, anime games, 1B+ visits shipped. dm yuuk7i.",
   },
 };
 
@@ -49,6 +58,7 @@ export default function RootLayout({
       className={`${inter.variable} ${anton.variable} ${bangers.variable} ${caveat.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-paper text-ink overflow-x-hidden">
+        <Loader />
         <Cursor />
         <SmoothScroll>{children}</SmoothScroll>
       </body>

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const links = [
   { label: "About", href: "#about" },
   { label: "Arsenal", href: "#services" },
+  { label: "Process", href: "#process" },
   { label: "Games", href: "#projects" },
   { label: "Reel", href: "#reel" },
   { label: "Rates", href: "#rates" },
