@@ -2,7 +2,7 @@
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float } from "@react-three/drei";
-import { Suspense, useRef } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
 function Shapes() {
@@ -67,17 +67,42 @@ function CameraRig() {
 }
 
 export default function HeroScene() {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(true);
+
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
+
+    const io = new IntersectionObserver(
+      ([entry]) => setActive(entry.isIntersecting),
+      { rootMargin: "100px" }
+    );
+    io.observe(el);
+
+    const onVis = () => setActive(document.visibilityState === "visible");
+    document.addEventListener("visibilitychange", onVis);
+
+    return () => {
+      io.disconnect();
+      document.removeEventListener("visibilitychange", onVis);
+    };
+  }, []);
+
   return (
-    <Canvas
-      className="!absolute inset-0 pointer-events-none"
-      camera={{ position: [0, 0, 6], fov: 50 }}
-      dpr={[1, 2]}
-      gl={{ alpha: true, antialias: true }}
-    >
-      <Suspense fallback={null}>
-        <Shapes />
-        <CameraRig />
-      </Suspense>
-    </Canvas>
+    <div ref={wrapRef} className="absolute inset-0">
+      <Canvas
+        className="!absolute inset-0 pointer-events-none"
+        camera={{ position: [0, 0, 6], fov: 50 }}
+        dpr={[1, 1.5]}
+        gl={{ alpha: true, antialias: true, powerPreference: "high-performance" }}
+        frameloop={active ? "always" : "never"}
+      >
+        <Suspense fallback={null}>
+          <Shapes />
+          <CameraRig />
+        </Suspense>
+      </Canvas>
+    </div>
   );
 }

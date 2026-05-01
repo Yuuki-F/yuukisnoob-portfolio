@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Play } from "lucide-react";
+import { useState } from "react";
 
 const clips = [
   {
@@ -92,6 +94,8 @@ function ClipCard({
   span: string;
   index: number;
 }) {
+  const [playing, setPlaying] = useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30, rotate: rotate - 3 }}
@@ -101,13 +105,31 @@ function ClipCard({
       className={`bg-paper-dark panel-shadow p-3 ${span}`}
     >
       <div className="relative aspect-video overflow-hidden border-2 border-ink bg-ink">
-        <iframe
-          src={`https://streamable.com/e/${id}?loop=0`}
-          allow="fullscreen"
-          allowFullScreen
-          loading="lazy"
-          className="absolute inset-0 w-full h-full"
-        />
+        {playing ? (
+          <iframe
+            src={`https://streamable.com/e/${id}?autoplay=1&loop=0`}
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full"
+          />
+        ) : (
+          <button
+            type="button"
+            onClick={() => setPlaying(true)}
+            data-cursor="hover"
+            aria-label={`play ${title}`}
+            className="group absolute inset-0 w-full h-full flex items-center justify-center bg-ink text-paper cursor-none"
+          >
+            <span className="absolute inset-0 halftone opacity-30" />
+            <span className="absolute inset-0 speed-lines opacity-15" />
+            <span className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-blood text-paper border-[3px] border-paper panel-shadow-sm transition-transform group-hover:scale-105">
+              <Play className="w-9 h-9 md:w-11 md:h-11 fill-paper translate-x-[2px]" strokeWidth={0} />
+            </span>
+            <span className="absolute bottom-3 left-3 font-comic text-base md:text-lg uppercase tracking-wide opacity-80">
+              click to play
+            </span>
+          </button>
+        )}
       </div>
       <div className="flex items-baseline justify-between mt-3 px-1">
         <h3 className="font-display text-2xl md:text-3xl">{title}</h3>
